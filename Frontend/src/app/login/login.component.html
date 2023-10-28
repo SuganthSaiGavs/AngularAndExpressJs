@@ -1,11 +1,11 @@
 <section>
   <article>
-<p i18n="Card header | This is login page">Login Page!</p>
-<b i18n="Card header | Enter your login details">Enter your login details</b><br/>
+<p>Login Page!</p>
+<b>Enter your login details</b><br/>
 <form #loginData="ngForm" (ngSubmit)="loginUser(loginData)">
  <br><label>{{this.loginResponse}}</label><br><br>
- <label i18n="Card header | User Id">User Id</label>  <input type="text" name="userid" ngModel required /><br />
- <label i18n="Card header | Password">Password</label> <input type="password" name="password" ngModel required /><br />
+ <label>User Id</label>  <input type="text" name="userid" ngModel required /><br />
+ <label>Password</label> <input type="password" name="password" ngModel required /><br />
   <input type="submit" value="Login"/>
 </form>
 </article>
