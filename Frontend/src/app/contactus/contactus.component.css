@@ -91,3 +91,9 @@ tr:hover {
         width: 100%;
     }
 }
+
+.nav-container {
+    display: flex;
+    justify-content: center;
+}
+

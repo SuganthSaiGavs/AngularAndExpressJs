@@ -1,5 +1,13 @@
- <p>Contacts Manager!</p>
- <b>Enter Contact's Details</b><br />
+ <div class="nav-container">
+  <nav>
+    <a routerLink="/home"><img src="../assets/Images/homeimg.jpg" width="40px" height="40px"/></a>&nbsp;
+    <a routerLink="/aboutus">About Us</a>&nbsp;
+    <a routerLink="/contactus">Contact Us</a>&nbsp;
+    <a routerLink="/login">Login</a>&nbsp;
+  </nav>
+</div>
+<div class="form-container">
+<b>Enter Contact's Details</b><br/>
  <form #contactData="ngForm" (ngSubmit)="selectedContact.id ? updateContact() : addContact(contactData)">
    <br><label>{{this.expresponse}}</label><br><br>
    First Name <input type="text" name="firstname" [(ngModel)]="selectedContact.firstname" /><br />
@@ -11,8 +19,10 @@
    <input type="submit" [value]="selectedContact.id ? 'Update Contact' : 'Add Contact'" />
    <input type="button" value="Get All Contacts" (click)="getAllContacts()"/>
  </form>
- 
+</div><br/>
 
+ 
+<div class="table-container">
 <b>Contact Details</b>
 <table border="4px">
   <thead>
@@ -41,6 +51,7 @@
     </tr>
   </tbody>
 </table>
+</div>
 
 <router-outlet></router-outlet>
 
